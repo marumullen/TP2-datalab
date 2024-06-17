@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Sawarabi+Mincho&display=swap');
+
+p{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+body {
+    background-color: white;
+    font-family: "Kaisei Tokumin", serif;
+    font-size: 15px;
+    color: maroon;
+    /* Color de texto blanco por defecto */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    color: maroon;
+    text-align: center; /* Centra el texto del encabezado */
+    animation-name: fondoanimado;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    color: maroon;
+    padding: 40px;
+}
+
+@keyframes fondoanimado {
+    0% {background-color: rgb(255, 142, 206);} /* Fucsia */
+    50% {background-color: #fffcfe;} /* Color claro */
+    100% {background-color: rgb(255, 142, 206);} /* Volver al fucsia */
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: maroon;
+    border: 2px solid maroon;
+    border-radius: 40px;
+    width: 150px; /* Ajusta el ancho de la caja de texto */
+    height: 30px;
+    display: block;
+    margin: 10px auto; /* margen superior e inferior en 10px y margen de izquierda y derecha en auto para centrarlo */
+    line-height: 23px;
+    padding: 3px;; 
+    transition: all 1s ease; /* Transición suave para todos los cambios */
+}
+
+header a:hover {
+    background-color: maroon;
+    color: white;
+    border-color: white;
+
+}
+
+h1 {
+    background-color: maroon;
+    color: white;
+}
+
+main {
+    width: 90%;
+    margin: 10px auto;
+    border: 2px solid maroon;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* hacer que si los contenedores no entran, es decir su suma supera el width del contenedor padre, entonces se van debajo generando una nueva fila */
+    justify-content: space-between;
+}
+
+footer {
+    background-image: url(../imagenes/fondo.jpg);
+    width: 100%;
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+div {
+    width: 48%;
+    margin: 10px;
+}
+
+#video {
+    width: 80%;
+    margin: 10px auto;
+}
+
+img,
+video {
+    width: 100%;
+}
